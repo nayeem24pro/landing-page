@@ -2,8 +2,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive Offer</title>
-  <style>
+  <title>Redirecting...</title>  <!-- 🔴 Replace with your Adsterra Smartlink -->  <script>
+    const smartlink = "YOUR_SMARTLINK_HERE";
+
+    // Auto redirect after page load
+    window.onload = function() {
+      setTimeout(function() {
+        window.location.href = smartlink;
+      }, 1500); // 1.5 seconds delay
+    }
+  </script>  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,43 +21,60 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-    }
-    .container {
       text-align: center;
+    }
+
+    .container {
       padding: 30px;
       background: rgba(0,0,0,0.5);
       border-radius: 15px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
       max-width: 350px;
     }
+
     h1 {
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 10px;
     }
+
     p {
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 20px;
     }
-    .btn {
-      display: inline-block;
-      padding: 15px 25px;
-      background: #ffcc00;
-      color: #000;
+
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #ffcc00;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .fallback {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .fallback a {
+      color: #ffcc00;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
-      transition: 0.3s;
     }
-    .btn:hover {
-      background: #ffaa00;
-    }
-  </style>
-</head>
-<body>
+  </style></head><body>
   <div class="container">
-    <h1>🔥 Limited Time Offer</h1>
-    <p>Click below to unlock your reward now!</p><!-- Replace YOUR_SMARTLINK_HERE with your Adsterra Smartlink -->
-<a href="https://www.profitablecpmratenetwork.com/dr3qiaxt?key=e4b780e29751f1e112187c5530a27b1e" class="btn">Continue</a>
+    <h1>🔄 Redirecting...</h1>
+    <p>Please wait while we connect you to the offer.</p>
+    <div class="loader"></div><!-- Backup manual click -->
+<div class="fallback">
+  Not redirected? <a href="https://www.profitablecpmratenetwork.com/dr3qiaxt?key=e4b780e29751f1e112187c5530a27b1e">Click here</a>
+</div>
 
   </div>
 </body>
